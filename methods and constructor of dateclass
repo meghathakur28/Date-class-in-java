@@ -1,0 +1,20 @@
+import java.util.Date;
+public class data {
+    public static void main(String[] args) {
+        Date d1= new Date();
+        System.out.println("Current date amd time: "+d1);
+        Date d2=new Date(2023,6,22);
+        System.out.println("The date and time: "+d2);
+        int year=d2.getYear();
+        System.out.println("Year: "+year);
+        int month=d2.getMonth();
+        System.out.println("Month: "+month);
+        int date=d2.getDate();
+        System.out.println("Date: "+date);
+        boolean a=d2.after(d1);
+        System.out.println("d2 is comes after d1: "+a);
+        boolean b=d2.before(d1);
+        System.out.println("d2 is comes before d1: "+b);
+        int c = d2.compareTo(d1);
+        System.out.println("comparison of d1 and d2: "+c);
+        System.out.println("return the time: "+d2.getTime());
